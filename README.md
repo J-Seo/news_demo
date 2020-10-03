@@ -17,6 +17,7 @@ GPT2 언어 모델을 활용해서 제목 및 본문을 바탕으로
 **추천 기사 모듈 체험하기** 👈 모드로 지정하시면 샘플 기사에 대해서 시스템이 작동합니다!
 
 Created by: 서재형(Jaehyung Seo), NLP & AI Lab (고려대학교)
+
 email: wolhalang@gmail.com
 
 
