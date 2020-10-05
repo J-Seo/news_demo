@@ -56,7 +56,7 @@ recommendation_model.py를 실행하여, 6번에서 저장한 파인튜닝 파�
 korsts/news_db.txt 사이의 문서 유사도를 측정하고 지정한 하이퍼 파라미터 (임계값 및 N rank)에 만큼 추천 기사로 보여준다.
 
 ```
-python recommendation_model.py
+python recommendation_model.py --selecte_sample_index $샘플 번호 --similarity_threshold $추천 점수 임계값 --max_rank $최대 노출 순위
 ```
 
 ### 추가 자료
