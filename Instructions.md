@@ -74,6 +74,10 @@ news_check.py: 간단한 news.json에 대한 데이터 분포 및 이상치 검�
 
 gpt2_tokenizer.py: gpt2의 cls, sep token 임베딩 및 토크 나이징을 위한 모듈 
 
+### windows 관련 이슈
+
+![issue1]()
+
 
 
 
