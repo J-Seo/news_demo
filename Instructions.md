@@ -59,6 +59,15 @@ korsts/news_db.txt 사이의 문서 유사도를 측정하고 지정한 하이�
 python recommendation_model.py --selecte_sample_index $샘플 번호 --similarity_threshold $추천 점수 임계값 --max_rank $최대 노출 순위
 ```
 
+### 7.1 예시
+
+단, similarity_threshold와 max_rank의 경우 default 값을 각각 3.0, 2으로 설정하여서 별도의 입력 없이도 실행 가능하다.
+
+```
+python recommendation_model.py --selecte_sample_index 0 --similarity_threshold 3.0 --max_rank 2
+```
+
+
 ### 추가 자료
 
 news_check.py: 간단한 news.json에 대한 데이터 분포 및 이상치 검출
