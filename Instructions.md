@@ -76,7 +76,13 @@ gpt2_tokenizer.py: gpt2의 cls, sep token 임베딩 및 토크 나이징을 위�
 
 ### windows 관련 이슈
 
-![issue1]()
+mac Catalina (10.15.7), Ubuntu 16.04, 18.04, Windows 10에서 모두 작동했을 때, 크게 이상이 없으나
+
+아래와 같이 multi cpu processing에서 windows 10의 경우 별도의 설정을 따로 해주어야해서 
+
+'num_workers = 4' 부분을 제거하면 해결됩니다.
+
+![issue1](https://github.com/J-Seo/news_recommendation/blob/main/sample_images/num_workers.png)
 
 
 
