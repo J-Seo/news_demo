@@ -24,3 +24,15 @@ make_news_dataset.py를 실행하여, 훈련이 가능한 데이터셋 및 추�
 ```
 python make_news_dataset.py
 ```
+
+### 4. KorSTS 훈련
+
+sts_fine_tune.py를 실행하여, KorSTS 데이터셋을 바탕으로 문장 유사도에 대한 파인 튜닝을 진행한다. 
+
+```
+python sts_fine_tune.py
+```
+
+### 5. 
+
+
