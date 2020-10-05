@@ -33,6 +33,40 @@ sts_fine_tune.py를 실행하여, KorSTS 데이터셋을 바탕으로 문장 유
 python sts_fine_tune.py
 ```
 
-### 5. 
+### 5. news dataset labeling 작업
+
+label_news_dataset.py를 싱행하여, 4번에서 저장한 파인튜닝 파라미터를 로드하여 뉴스 데이터에 대해서 레이블링을 진행한다. 
+
+```
+python label_news_dataset.py
+```
+
+### 6. news data 훈련
+
+sts_news_finetune.py를 실행하여, 4번에 저장한 파인튜닝 파라미터를 로드하여, 추가적인 파인튜닝을 진행한다. 
+
+```
+python sts_news_finetune.py
+```
+
+### 7. 최종 추천 시스템 작동
+
+recommendation_model.py를 실행하여, 6번에서 저장한 파인튜닝 파라미터를 로드하여, korsts/demo.txt에 저장한 샘플 기사와 추천 목록화되어 있는
+
+korsts/news_db.txt 사이의 문서 유사도를 측정하고 지정한 하이퍼 파라미터 (임계값 및 N rank)에 만큼 추천 기사로 보여준다.
+
+```
+python recommendation_model.py
+```
+
+### 추가 자료
+
+news_check.py: 간단한 news.json에 대한 데이터 분포 및 이상치 검출
+
+gpt2_tokenizer.py: gpt2의 cls, sep token 임베딩 및 토크 나이징을 위한 모듈 
+
+
+
+
 
 
