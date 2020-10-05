@@ -20,4 +20,6 @@ Created by: 서재형(Jaehyung Seo), NLP & AI Lab (고려대학교)
 
 email: wolhalang@gmail.com
 
+### 코드 실행 예시
 
+[sample](https://github.com/J-Seo/news_recommendation/blob/main/sample_images/sample_image.png)
