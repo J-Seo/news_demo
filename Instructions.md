@@ -49,24 +49,24 @@ sts_news_finetune.py를 실행하여, 4번에 저장한 파인튜닝 파라미�
 python sts_news_finetune.py
 ```
 
-### 7. 최종 추천 시스템 작동
+### 7. 최종 추천 시스템 작동 (11.10 수정)
 
 recommendation_model.py를 실행하여, 6번에서 저장한 파인튜닝 파라미터를 로드하여, korsts/demo.txt에 저장한 샘플 기사와 추천 목록화되어 있는
 
 korsts/news_db.txt 사이의 문서 유사도를 측정하고 지정한 하이퍼 파라미터 (임계값 및 N rank)에 만큼 추천 기사로 보여준다.
 
 ```
-python recommendation_model.py --selecte_sample_index $샘플 번호 --similarity_threshold $추천 점수 임계값 --max_rank $최대 노출 순위
+python recommendation_model.py --select_sample_index $샘플 번호 --similarity_threshold $추천 점수 임계값 --max_rank $최대 노출 순위 --input_url @검색 기준 뉴스 기사 주소
 ```
 
-### 7.1 예시
+### 7.1 예시 (11.10 수정)
 
 단, similarity_threshold와 max_rank의 경우 default 값을 각각 3.0, 2으로 설정하여서 별도의 입력 없이도 실행 가능하다.
 
 ```
-python recommendation_model.py --selecte_sample_index 0 --similarity_threshold 3.0 --max_rank 2
+python recommendation_model.py --select_sample_index 0 --similarity_threshold 3.0 --max_rank 2
+python recommendation_model.py --select_sample_index 3 --similarity_threshold 3.0 --max_rank 2 --input_url https://www.yna.co.kr/view/MYH20201109020400641?section=search
 ```
-
 
 ### 추가 자료
 
