@@ -7,3 +7,5 @@ gensim == 3.83
 sklearn == 0.0
 tqdm == 4.50.0
 setproctitle == 1.1.10
+gensim == 3.8.3
+newspaper3k == 0.2.8
